@@ -1,0 +1,10 @@
+<div class="container">
+<div [ngStyle]="{background: getColor()}"  style="border-radius: 2px">
+  <span  style="float: right;"> {{ created_at | date: 'short': 'fr-fr' }}</span>
+  <h1>{{ title}}</h1>
+  <p>{{ content}}</p>
+  <p>Le potentiel de love de votre publication est de {{loveIts}}</p>
+
+  <button class="btn btn-success" (click)="onLike()">J'aime</button><button  class="btn btn-danger" (click)="onDisLike()">J'aime pas</button>
+</div>
+</div>

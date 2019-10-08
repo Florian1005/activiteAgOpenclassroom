@@ -1,0 +1,4 @@
+
+<h1 class="container">POSTS</h1>
+<app-post-list  *ngFor="let posts of post"[title]="posts.nameTitle" [content]="posts.namePost" [created_at]="posts.date" [loveIts]="posts.love"></app-post-list>
+
